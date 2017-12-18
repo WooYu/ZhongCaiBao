@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_setting_outload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_84px"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginRight="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_50px"
+                android:background="@drawable/active_bg"
+                android:gravity="center"
+                android:text="每日任务"
+                android:textColor="@color/white"
+                android:textSize="@dimen/w_40px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_220px"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginRight="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_98px"
+                android:background="@drawable/active_bg_red"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_42px"
+                    android:src="@drawable/active_icon1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_50px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_active_v1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日首冲活动"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="level1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/w_5px"
+                    android:layout_height="@dimen/h_200px"
+                    android:layout_marginLeft="@dimen/w_60px"
+                    android:background="@color/color_ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_20px"
+                    android:layout_marginRight="@dimen/w_42px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一次充值"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_min1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元-"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_max1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元，赠送充值金额的"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_percent1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_220px"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginRight="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_56px"
+                android:background="@drawable/active_bg_red"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_42px"
+                    android:src="@drawable/active_icon2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_50px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_active_v2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日首冲活动"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="level1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/w_5px"
+                    android:layout_height="@dimen/h_200px"
+                    android:layout_marginLeft="@dimen/w_60px"
+                    android:background="@color/color_ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_20px"
+                    android:layout_marginRight="@dimen/w_42px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一次充值"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_min2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元-"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_max2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元，赠送充值金额的"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_percent2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_220px"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginRight="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_56px"
+                android:background="@drawable/active_bg_red"
+                android:gravity="center_vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_42px"
+                    android:src="@drawable/active_icon3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_50px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_active_v3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日首冲活动"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="level1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/w_5px"
+                    android:layout_height="@dimen/h_200px"
+                    android:layout_marginLeft="@dimen/w_60px"
+                    android:background="@color/color_ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="@dimen/w_20px"
+                    android:layout_marginRight="@dimen/w_42px"
+                    android:layout_weight="0.69"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一次充值"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_min3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元-"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_max3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元，赠送充值金额的"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_percent3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_220px"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginRight="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_56px"
+                android:background="@drawable/active_bg_red"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_42px"
+                    android:src="@drawable/active_icon4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_50px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_active_v4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日首冲活动"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="level1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_28px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/w_5px"
+                    android:layout_height="@dimen/h_200px"
+                    android:layout_marginLeft="@dimen/w_60px"
+                    android:background="@color/color_ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/w_20px"
+                    android:layout_marginRight="@dimen/w_42px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一次充值"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_min4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元-"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_max4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元，赠送充值金额的"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+
+                        <TextView
+                            android:id="@+id/tv_active_percent4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/w_32px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:layout_marginTop="@dimen/h_86px"
+                android:text="温馨提示："
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/w_32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_44px"
+                android:text="一 参与充值赠送的会员如需提款，则要求消费总额达到对应的比例"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/w_32px" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_active_get"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_112px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_e8554e"
+        android:gravity="center"
+        android:text="领取礼金"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_36px" />
+</RelativeLayout>

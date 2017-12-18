@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#99000000"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/leftview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="@dimen/w_830px"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!--方案金额-->
+        <TextView
+            android:id="@+id/tv_chippedamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gapsize_d"
+            android:textColor="@color/cl_gray"
+            android:textSize="@dimen/typesize_d"
+            tools:text="@string/chipped_amount" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_dadada" />
+
+        <!--合买总份数-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/chipped_copies"
+            android:textColor="@color/cl_gray"
+            android:textSize="@dimen/typesize_d" />
+
+        <EditText
+            android:id="@+id/et_chippedcopies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gapsize_d"
+            android:layout_marginRight="@dimen/gapsize_d"
+            android:background="@drawable/touzhuconfirm_bg"
+            android:inputType="number"
+            android:padding="@dimen/gapsize_d"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d"
+            tools:text="2" />
+
+        <!--我要认购-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_d"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/chipped_offertobuy"
+            android:textColor="@color/cl_gray"
+            android:textSize="@dimen/typesize_d" />
+
+        <EditText
+            android:id="@+id/et_offertobuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gapsize_d"
+            android:layout_marginRight="@dimen/gapsize_d"
+            android:background="@drawable/touzhuconfirm_bg"
+            android:padding="@dimen/gapsize_d"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d" />
+
+        <!--保底份数-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_d"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/chipped_guaranteednum"
+            android:textColor="@color/cl_gray"
+            android:textSize="@dimen/typesize_d" />
+
+        <EditText
+            android:id="@+id/et_guaranteednum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gapsize_d"
+            android:layout_marginRight="@dimen/gapsize_d"
+            android:background="@drawable/touzhuconfirm_bg"
+            android:hint="@string/chipped_guaranteedtip"
+            android:inputType="number"
+            android:padding="@dimen/gapsize_d"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d" />
+
+        <!--保密设置-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_d"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/chipped_securitysetting"
+            android:textColor="@color/cl_gray"
+            android:textSize="@dimen/typesize_d" />
+
+        <RadioGroup
+            android:id="@+id/rg_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/gapsize_d"
+            android:paddingRight="@dimen/gapsize_d">
+
+            <RadioButton
+                android:id="@+id/rb_whole"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_secrecy_left"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/gapsize_d"
+                android:text="@string/chipped_securityset_whole"
+                android:textColor="@drawable/selector_secrecy_textcolor"
+                android:textSize="@dimen/typesize_d" />
+
+            <RadioButton
+                android:id="@+id/rb_cutoff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_secrecy_middle"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/gapsize_d"
+                android:text="@string/chipped_securityset_cutoff"
+                android:textColor="@drawable/selector_secrecy_textcolor"
+                android:textSize="@dimen/typesize_d" />
+
+            <RadioButton
+                android:id="@+id/rb_tailafter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_secrecy_middle"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/gapsize_d"
+                android:text="@string/chipped_securityset_tailafter"
+                android:textColor="@drawable/selector_secrecy_textcolor"
+                android:textSize="@dimen/typesize_d" />
+
+            <RadioButton
+                android:id="@+id/rb_secrecy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_secrecy_right"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/gapsize_d"
+                android:text="@string/chipped_securityset_secrecy"
+                android:textColor="@drawable/selector_secrecy_textcolor"
+                android:textSize="@dimen/typesize_d" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_dadada" />
+
+        <!--应支付金额、提交-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sumpayable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/gapsize_d"
+                android:textColor="@color/title_bar_bg"
+                tools:text="@string/chipped_sumpayable" />
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/title_bar_bg"
+                android:gravity="center"
+                android:padding="@dimen/gapsize_c"
+                android:text="@string/chipped_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/typesize_c" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

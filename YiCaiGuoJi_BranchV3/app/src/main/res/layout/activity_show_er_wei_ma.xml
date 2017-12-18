@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.ShowErWeiMaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_40px"
+        android:text="微信扫一扫转账"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_show_erweima"
+        android:layout_width="@dimen/w_700px"
+        android:layout_height="@dimen/w_700px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_60px"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_30px"
+        android:text="易彩云店"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_30px"
+        android:text="向微信转账"
+        android:textColor="@color/color_999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_30px"
+        android:text="[请截图上面二维码保存图片]"
+        android:textColor="@color/color_999999"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_120px"
+        android:layout_marginTop="@dimen/h_30px"
+        android:paddingLeft="@dimen/h_80px"
+        android:paddingRight="@dimen/h_80px">
+
+        <TextView
+            android:id="@+id/tv_show_baocun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/active_erweima_red"
+            android:gravity="center"
+            android:text="保存到手机"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_show_huizhidan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/w_80px"
+            android:layout_weight="1"
+            android:background="@drawable/active_erweima_red"
+            android:gravity="center"
+            android:text="提交回执单"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/h_80px"
+        android:layout_marginTop="@dimen/h_40px"
+        android:text="特别提醒："
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/h_80px"
+        android:layout_marginRight="@dimen/h_80px"
+        android:layout_marginTop="@dimen/h_40px"
+        android:text="扫一扫上方二维码，快速充值。转账界面中，请备注该充值的备注信息，充值完成后，记得提交回执单才能为您入账。"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_144px"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/w_30px"
+            android:paddingRight="@dimen/w_30px"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bettingdetail_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typesize_b" />
+    </RelativeLayout>
+
+    <!--方案信息-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/gapsize_b"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/gapsize_b"
+        android:paddingTop="@dimen/gapsize_b">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="#ee5246" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/gapsize_b"
+            android:text="@string/bettingdetail_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--方案明细-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_particulars"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_particulars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--开奖结果-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_iletou"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="9,9" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--方案编号-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_serial"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="121" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--方案总额-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_totalsum"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="0.2" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--方案期数-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_periods"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="20101010" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--结束时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bettingdetail_endtime"
+            android:textColor="#989898"
+            android:textSize="@dimen/typesize_c" />
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            tools:text="2017-05-05 15:20:22" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!--方案内容-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/gapsize_b"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/gapsize_b"
+        android:paddingTop="@dimen/gapsize_b">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="#ee5246" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/gapsize_b"
+            android:text="@string/bettingdetail_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6" />
+
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="@dimen/gapsize_c"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tv_gametype"
+            android:layout_width="wrap_content"
+            tools:text="[三星二码]"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_betnumber"
+            android:layout_width="wrap_content"
+            tools:text="56789"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            android:layout_marginStart="@dimen/gapsize_f"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_betamount"
+            android:layout_width="wrap_content"
+            tools:text="投注：0.2元"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_c"
+            android:layout_marginStart="@dimen/gapsize_f"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bonus"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            tools:text="奖金0.363元"
+            android:textColor="#d36872"
+            android:gravity="right"
+            android:textSize="@dimen/typesize_c"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

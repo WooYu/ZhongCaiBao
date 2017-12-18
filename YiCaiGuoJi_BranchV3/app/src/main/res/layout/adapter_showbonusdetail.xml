@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_230px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_50px">
+            <TextView
+                android:id="@+id/tv_period1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_30px"
+                android:text="第"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/w_38px"
+                />
+            <TextView
+                android:id="@+id/tv_period_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_period1"
+                android:text="201706251310"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/w_38px"
+                />
+            <TextView
+                android:id="@+id/tv_period2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_period_detail"
+                android:text="期"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/w_38px"
+                />
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/w_30px"
+                android:text="开奖"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/w_28px" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_time1"
+                android:text="21时50分"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/w_28px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_balls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_30px"
+            android:layout_marginTop="@dimen/h_26px"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_3px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:background="@color/color_e5e5e5" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="toast_mg_bottom">80dip</dimen>
+
+    <!--字体大小:20sp\16sp\14sp\12sp\10sp\8sp-->
+    <dimen name="typesize_a">20sp</dimen>
+    <dimen name="typesize_b">16sp</dimen>
+    <dimen name="typesize_c">14sp</dimen>
+    <dimen name="typesize_d">12sp</dimen>
+    <dimen name="typesize_e">10sp</dimen>
+    <dimen name="typesize_f">8sp</dimen>
+
+    <!--常用间隔:20dp\15dp\12dp\10dp\8dp\5dp\3dp\1dp-->
+    <dimen name="gapsize_a">20dp</dimen>
+    <dimen name="gapsize_b">15dp</dimen>
+    <dimen name="gapsize_c">12dp</dimen>
+    <dimen name="gapsize_d">10dp</dimen>
+    <dimen name="gapsize_e">8dp</dimen>
+    <dimen name="gapsize_f">5dp</dimen>
+    <dimen name="gapsize_g">3dp</dimen>
+    <dimen name="gapsize_h">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

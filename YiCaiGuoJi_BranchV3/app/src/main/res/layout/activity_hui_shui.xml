@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fafafa"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.HuiShuiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_110px"
+        android:layout_marginBottom="@dimen/w_42px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:layout_marginTop="@dimen/w_42px"
+        android:background="@drawable/round_bt_red">
+
+        <RelativeLayout
+            android:id="@+id/rl_huishui_hs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_ff4949">
+
+            <TextView
+                android:id="@+id/tv_huishui_hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="回水厅"
+                android:textColor="@color/white"
+                android:textSize="@dimen/w_36px" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_5px"
+            android:layout_height="match_parent"
+            android:background="@color/color_ff4949" />
+
+        <RelativeLayout
+            android:id="@+id/rl_huishui_bb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_huishui_bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="保本厅"
+                android:textColor="@color/color_ff4949"
+                android:textSize="@dimen/w_36px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/w_5px"
+            android:layout_height="match_parent"
+            android:background="@color/color_ff4949" />
+
+        <RelativeLayout
+            android:id="@+id/rl_huishui_gpl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_huishui_gpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="高赔率厅"
+                android:textColor="@color/color_ff4949"
+                android:textSize="@dimen/w_36px" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_120px"
+        android:background="@color/color_e6e6e6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/w_36px" />
+
+        <TextView
+            android:id="@+id/tv_huishui_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="回水金额"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/w_36px" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_huishui_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f5"
+    >
+    <include layout="@layout/sousuo_title"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_merge_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_123px"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/transparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/color_e8554e"
+        app:tabTextColor="@color/color_999999"
+        app:tabBackground="@android:color/white"
+        app:tabTextAppearance="@style/tabTextSize"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_merge_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/h_14px"
+        >
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

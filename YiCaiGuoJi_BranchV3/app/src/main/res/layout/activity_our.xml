@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.OurActivity">
+
+    <ImageView
+        android:id="@+id/iv_our_image"
+        android:layout_width="@dimen/h_200px"
+        android:layout_height="@dimen/h_200px"
+        android:layout_marginTop="@dimen/h_100px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/h_100px"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/active_bg_white"
+    android:layout_marginLeft="@dimen/w_30px"
+    android:layout_marginRight="@dimen/w_30px"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/h_40px"
+        android:layout_marginBottom="@dimen/h_40px"
+        android:layout_marginLeft="@dimen/h_50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_333333"
+            android:text="当前版本号："
+            />
+        <TextView
+            android:id="@+id/iv_our_banbenhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_333333"
+            android:text="v10"
+            />
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_2px"
+    android:background="@color/color_e6e6e6"
+    android:layout_marginLeft="@dimen/w_90px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_40px"
+        android:layout_marginBottom="@dimen/h_40px"
+        android:layout_marginLeft="@dimen/h_50px"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_333333"
+            android:text="官方客服QQ："
+            />
+        <TextView
+            android:id="@+id/iv_our_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_333333"
+            android:text="20494090"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

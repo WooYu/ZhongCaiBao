@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.Beijing28VipDetailActivity">
+
+    <include layout="@layout/title_bar_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_182px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离20170703期截止"
+                android:textSize="@dimen/h_38px"
+                android:textColor="@color/color_666666"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_25px"
+                android:text="3分37秒"
+                android:textSize="@dimen/h_40px"
+                android:textColor="@color/color_e8554e"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/w_2px"
+            android:layout_height="@dimen/h_90px"
+            android:background="@color/color_e5e5e5"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_money_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额"
+                android:textSize="@dimen/h_38px"
+                android:textColor="@color/color_666666"
+                />
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_25px"
+                android:text="0元宝"
+                android:textSize="@dimen/h_40px"
+                android:textColor="@color/color_e8554e"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/h_line" />
+    <ListView
+        android:id="@+id/lv_qishu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

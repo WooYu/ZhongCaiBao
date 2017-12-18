@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_123px"
+    android:background="@color/color_e8554e"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/w_930px"
+        android:layout_height="@dimen/h_81px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:background="@drawable/sousuo_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_50px"
+            android:src="@drawable/sousuo" />
+
+        <EditText
+            android:id="@+id/et_sousuo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/w_20px"
+            android:background="@null"
+            android:hint="请输入搜索用户"
+            android:textColor="@color/color_cacaca"
+            android:textColorHint="@color/color_cacaca"
+            android:textSize="@dimen/w_34px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_sousuo_kefu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_20px"
+        android:src="@drawable/kefu" />
+
+</LinearLayout>

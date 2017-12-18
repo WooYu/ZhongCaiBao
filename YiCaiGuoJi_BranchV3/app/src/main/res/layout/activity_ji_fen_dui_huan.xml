@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.JiFenDuiHuanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_500px"
+        android:background="@color/color_e85748">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_44px"
+            android:layout_marginTop="@dimen/h_50px"
+            android:text="100积分兑换1元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/w_28px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/w_30px" />
+
+                <TextView
+                    android:id="@+id/tv_jifen_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_20px"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/w_56px" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/h_80px"
+                android:layout_marginRight="@dimen/h_80px"
+                android:src="@drawable/jifen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用余额"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/w_30px" />
+
+                <TextView
+                    android:id="@+id/tv_jifen_yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_20px"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/w_56px" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginTop="@dimen/h_30px"
+        android:text="请输入需要兑换的积分（整数）"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/w_38px" />
+
+    <EditText
+        android:id="@+id/et_jifen_duihuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginTop="@dimen/h_30px"
+        android:inputType="number"
+        android:background="@null"
+        android:hint="请输入整数"
+        android:textColor="@color/color_9e9e9e"
+        android:textSize="@dimen/w_72px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:layout_marginTop="@dimen/h_30px"
+        android:background="@color/color_e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_137px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/h_30px"
+        android:paddingTop="@dimen/h_30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用积分："
+            android:textColor="@color/color_757575"
+            android:textSize="@dimen/w_38px" />
+
+        <TextView
+            android:id="@+id/tv_jifen_keyongjifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/color_e85748"
+            android:textSize="@dimen/w_38px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_28px"
+        android:background="@color/color_f2f2f1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/w_40px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginTop="@dimen/w_40px"
+        android:text="积分兑换记录"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/w_36px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:background="@color/color_e5e5e5" />
+
+    <FrameLayout
+        android:name="com.developer.lecai.fragment.JiFenDuiHuanFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_jifen_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_123px"
+        android:background="@color/color_e8554e"
+        android:gravity="center"
+        android:text="立即兑换"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_40px" />
+
+</LinearLayout>

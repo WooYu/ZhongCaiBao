@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/gapsize_d">
+
+    <!--北京幸运28，09-08 12:00:00-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d"
+            tools:text="北京幸运28" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_f"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/typesize_d"
+            tools:text="特码a" />
+    </LinearLayout>
+
+    <!--期数、投注号码-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_periods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e33229"
+            android:textSize="@dimen/typesize_d"
+            tools:text="2018090102" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_f"
+            android:textColor="#e33229"
+            android:textSize="@dimen/typesize_d"
+            tools:text="A" />
+    </LinearLayout>
+
+    <!--投注额-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/betrecord_amount"
+            android:textColor="#e33229"
+            android:textSize="@dimen/typesize_d" />
+
+        <TextView
+            android:id="@+id/tv_betamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_f"
+            android:textColor="#e33229"
+            android:textSize="@dimen/typesize_d"
+            tools:text="23" />
+    </LinearLayout>
+
+    <!--中将金额，中奖状态-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_winamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d"
+            tools:text="0.0" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gapsize_f"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/typesize_d"
+            tools:text="未中奖" />
+    </LinearLayout>
+
+    <!--撤单-->
+    <TextView
+        android:id="@+id/tv_revoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/gapsize_e"
+        android:background="@color/fangjian_bg"
+        android:paddingBottom="@dimen/gapsize_g"
+        android:paddingEnd="@dimen/gapsize_f"
+        android:paddingStart="@dimen/gapsize_f"
+        android:paddingTop="@dimen/gapsize_g"
+        android:text="@string/betrecord_status_revoke"
+        android:textColor="#e33229"
+        android:textSize="@dimen/typesize_d" />
+</LinearLayout>

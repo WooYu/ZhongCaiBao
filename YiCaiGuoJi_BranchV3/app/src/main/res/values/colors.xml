@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="cl_gray">#969696</color>
+    <color name="cl_orange">#fb5f21</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="app_bg">#f5f5f5</color>
+    <color name="corona_dialog">#6E6C67</color>
+    <color name="title_bar_bg">#e8554e</color>
+    <drawable name="dialog_bg">#00000000</drawable>
+    <drawable name="glide_loading_bg">#ff0000</drawable>
+    <drawable name="glide_error_bg">#00ff00</drawable>
+
+    <color name="page_bg">#ffffff</color>
+
+    <color name="color_ff6c00">#ff6c00</color>
+    <color name="color_E14343">#E14343</color>
+
+    <color name="color_FD8023">#FD8023</color>
+
+    <color name="color_eb5a4d">#eb5a4d</color>
+    <color name="color_f67355">#f67355</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_e8554e">#e8554e</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_ff4949">#ff4949</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_e85748">#e85748</color>
+    <color name="color_9e9e9e">#9e9e9e</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_f2f2f1">#f2f2f1</color>
+    <color name="color_ed7771">#ed7771</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ea605a">#ea605a</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_fb785c">#fb785c</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_e85851">#e85851</color>
+
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_dadada">#dadada</color>
+    <color name="color_eff2f5">#eff2f5</color>
+    <color name="color_191919">#191919</color>
+    <color name="color_fc9005">#fc9005</color>
+
+    <!-- 底部导航上面线条 -->
+    <color name="dibuxiantiao">#D1D1D1</color>
+    <!-- 底部部导航栏背景颜色 -->
+
+    <color name="dibu_bg">#ffffff</color>
+
+    <!-- 字体选中和被选中状态 -->
+    <color name="is_selected">#333333</color>
+    <color name="no_selected">#999999</color>
+    <!-- 底部导航字体颜色 -->
+    <color name="mycolor">#333333</color>
+    <color name="grayColor">#333333</color>
+    <color name="hand_yellow">#ffd636</color>
+    <!-- 幸运28主色 -->
+    <color name="blue">#3b85ff</color>
+    <color name="green">#50a72d</color>
+    <color name="yuse">#028c9e</color>
+    <color name="redbrown">#ba5c00</color>
+    <color name="fense">#e55cca</color>
+    <color name="yellow">#E8F505</color>
+    <color name="color_red">#F53847</color>
+
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="fengexian1">#dddddd</color>
+    <color name="fengexian2">#cccccc</color>
+    <color name="tishiwenzi">#999999</color>
+    <color name="zhengwenwenzi">#666666</color>
+    <color name="titleyanse">#333333</color>
+
+    <color name="fangjian_bg">#D8D1CB</color>
+    <color name="da_xiao">#63A5FD</color>
+    <color name="dan_shuang">#63C9FD</color>
+    <color name="da_xiao_dan_shuang">#66D6BD</color>
+
+    <color name="huishui_orange">#FEC81E</color>
+
+    <color name="statelan_bg">#FF8212</color>
+</resources>

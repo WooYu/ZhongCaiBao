@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_jfmx_total"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/h_144px" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_830px"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/w_27px"
+                android:paddingRight="@dimen/w_27px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px"
+                    android:text="时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/w_35px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_kaishi"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="开始时间"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_jieshu"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="结束时间"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px"
+                    android:text="分类"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/w_35px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_dlt"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="大乐透"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_ssq"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="双色球"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_bjxy"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="北京幸运28"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_jndxy"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="加拿大幸运28"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_ffc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="分分彩"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_sfc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="三分彩"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_wfc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="五分彩"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_bjsc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="北京赛车"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_cqssc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="重庆时时彩"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                    <TextView
+                        android:id="@+id/tv_jfmx_lhc"
+                        android:layout_width="@dimen/w_350px"
+                        android:layout_height="@dimen/h_100px"
+                        android:layout_marginLeft="@dimen/w_60px"
+                        android:background="@drawable/touzhu_selector"
+                        android:gravity="center"
+                        android:text="六合彩"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_25px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_100px"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tv_jfmx_cz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/tv_jfmx_qr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_e8554e"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/w_40px" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

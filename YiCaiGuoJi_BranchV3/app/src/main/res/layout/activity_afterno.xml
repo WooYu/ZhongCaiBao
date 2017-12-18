@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_144px"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/gapsize_c"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_afterno"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typesize_b" />
+
+    </RelativeLayout>
+
+    <!--期数、金额、倍数-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_e6e6e6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/afterno_periods"
+            android:textColor="@color/color_9e9e9e"
+            android:textSize="@dimen/typesize_d" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/afterno_money"
+            android:textColor="@color/color_9e9e9e"
+            android:textSize="@dimen/typesize_d" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/afterno_multiple"
+            android:textColor="@color/color_9e9e9e"
+            android:textSize="@dimen/typesize_d" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_afterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_e6e6e6">
+
+        <TextView
+            android:id="@+id/tv_periods_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/gapsize_d"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d"
+            android:text="@string/afterno_statistics_default" />
+
+        <TextView
+            android:id="@+id/tv_winningundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/gapsize_f"
+            android:drawableStart="@drawable/afterno_revoke_select"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/gapsize_d"
+            android:paddingEnd="@dimen/gapsize_b"
+            android:paddingTop="@dimen/gapsize_d"
+            android:text="@string/afterno_winning_cancellations"
+            android:textColor="@color/title_bar_bg"
+            android:textSize="@dimen/typesize_d" />
+    </RelativeLayout>
+
+    <!--提交-->
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar_bg"
+        android:gravity="center"
+        android:padding="@dimen/gapsize_b"
+        android:text="@string/afterno_sumbit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/typesize_c" />
+
+</LinearLayout>

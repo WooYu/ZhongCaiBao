@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_chipped"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_chippednum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#e5e5e5"
+            android:hint="请输入合买的份数"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:textColor="@color/color_666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_participate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="参与合买"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_chipped">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hemaidetail_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/h_44px"
+                android:paddingRight="@dimen/h_44px"
+                android:text="截止:11:44:55"
+                android:textColor="#666666"
+                android:textSize="@dimen/h_30px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:layout_marginTop="@dimen/h_14px"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_44px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_49px">
+
+                    <TextView
+                        android:id="@+id/tv_lottery_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重庆时时彩"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/h_38px" />
+
+                    <TextView
+                        android:id="@+id/tv_lottery_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="20170628008期"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/h_30px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_55px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发起人："
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/h_30px" />
+
+                    <TextView
+                        android:id="@+id/tv_sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wwww"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/h_32px" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_40px">
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/bar_color" />
+
+                    <TextView
+                        android:id="@+id/tv_show_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/hemaidetail_bt"
+                        android:paddingBottom="@dimen/h_16px"
+                        android:paddingLeft="@dimen/h_30px"
+                        android:paddingRight="@dimen/h_30px"
+                        android:paddingTop="@dimen/h_16px"
+                        android:text="0%"
+                        android:textColor="#E8554E" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_191px"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_project_sum"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="122"
+                            android:textColor="#e8554e"
+                            android:textSize="@dimen/h_32px" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="方案金额"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/h_28px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_sender_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="122"
+                            android:textColor="#e8554e"
+                            android:textSize="@dimen/h_32px" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="发起人自购"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/h_28px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_exact_sum"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="122"
+                            android:textColor="#e8554e"
+                            android:textSize="@dimen/h_32px" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="提成(税后奖金)"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/h_28px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/h_5px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/h_35px"
+                        android:layout_marginRight="@dimen/w_42px"
+                        android:layout_marginTop="@dimen/h_35px"
+                        android:background="#E5E5E5" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_shopping_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="122"
+                            android:textColor="#e8554e"
+                            android:textSize="@dimen/h_32px" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="合买中奖"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/h_28px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:layout_marginTop="@dimen/h_14px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_112px"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="@dimen/w_12px"
+                    android:layout_height="@dimen/h_36px"
+                    android:layout_centerVertical="true"
+                    android:background="#E8554E" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/w_44px"
+                    android:text="方案信息"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案明细"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="总奖金"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_total_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="合买参与"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_particapte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/h_39px"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+
+                <ImageView
+                    android:layout_width="@dimen/w_32px"
+                    android:layout_height="@dimen/h_32px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/my_arror_right"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_100px"
+                android:visibility="gone">
+
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案宣传"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_advertise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案编号"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案总额"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="订单份数"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_zfsnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案保底"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_keep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="税后佣金"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_tax_commission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="发起时间"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_send_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:layout_marginTop="@dimen/h_14px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_112px"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="@dimen/w_12px"
+                    android:layout_height="@dimen/h_36px"
+                    android:layout_centerVertical="true"
+                    android:background="#E8554E" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/w_44px"
+                    android:text="方案内容"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_123px"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px">
+
+                <TextView
+                    android:id="@+id/tv_project_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="方案明细"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_38px" />
+
+                <TextView
+                    android:id="@+id/tv_project_detail_content"
+                    tools:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:layout_marginTop="@dimen/h_14px"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_112px"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="@dimen/w_12px"
+                    android:layout_height="@dimen/h_36px"
+                    android:layout_centerVertical="true"
+                    android:background="#E8554E" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/w_44px"
+                    android:text="追号详情"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_38px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_3px"
+                android:background="#e5e5e5" />
+
+            <ListView
+                android:id="@+id/lv_hemaidetail_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/w_44px"
+                android:paddingRight="@dimen/w_42px" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

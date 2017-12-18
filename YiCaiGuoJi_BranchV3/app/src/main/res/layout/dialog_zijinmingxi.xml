@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hmjl_total"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/h_144px" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/w_830px"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/w_27px"
+                    android:paddingRight="@dimen/w_27px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px"
+                        android:text="时间"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_35px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_kaishi"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="开始时间"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_jieshu"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="结束时间"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px"
+                        android:text="状态"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_35px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_yizj"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="已中奖"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_weizj"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="未中奖"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px"
+                        android:text="分类"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_35px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_cxpj"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="撤销派奖"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_hmzjjj"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="合买中奖奖金"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_txsb"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="提现失败"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_hmtk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="合买退款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_sgkk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="手工扣款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_zjmx"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="资金明细"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_jsbd"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="结算变动"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_tzkk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="投注扣款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_hsmx"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="回水明细"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_jjps"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="奖金派送"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_yxfd"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="游戏返点"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_cdfk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="撤单返款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_zhcz"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="账户充值"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_hmyj"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="合买佣金"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_cxzd"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="撤销追单"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_zhtx"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="账户提现"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_czdzs"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="充值大赠送"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_bdtk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="保底退款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_cyhm"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="参与合买"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_zijin_cjbd"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="重结变动"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_40px">
+
+                        <TextView
+                            android:id="@+id/tv_zijin_czqfk"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text="撤整期返款"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                        <TextView
+                            android:id="@+id/tv_hmjl_lhc"
+                            android:layout_width="@dimen/w_350px"
+                            android:layout_height="@dimen/h_100px"
+                            android:layout_marginLeft="@dimen/w_60px"
+                            android:background="@drawable/touzhu_selector"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/w_25px" />
+
+                    </LinearLayout>
+                    <View android:layout_width="match_parent"
+                        android:layout_height="@dimen/h_100px"/>
+                </LinearLayout>
+            </ScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_100px"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/tv_zijin_cz"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="重置"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/w_40px" />
+
+                    <TextView
+                        android:id="@+id/tv_zijin_qr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/color_e8554e"
+                        android:gravity="center"
+                        android:text="确认"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/w_40px" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

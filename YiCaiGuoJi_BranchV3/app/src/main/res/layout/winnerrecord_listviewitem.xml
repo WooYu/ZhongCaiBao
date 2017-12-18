@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_100px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/w_45px"
+        android:paddingRight="@dimen/w_45px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_winner_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="系统公告"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_38px" />
+
+            <TextView
+                android:id="@+id/tv_winner_cai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="系统公告"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_38px" />
+
+            <TextView
+                android:id="@+id/tv_winner_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="戏中100"
+                android:textColor="@color/color_FD8023"
+                android:textSize="@dimen/w_38px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

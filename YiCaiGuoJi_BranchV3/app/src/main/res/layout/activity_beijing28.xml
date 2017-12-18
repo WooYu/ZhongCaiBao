@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.Beijing28Activity">
+
+   <!-- <RelativeLayout
+        android:id="@+id/rl_huishui"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_455px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:layout_marginTop="@dimen/h_32px"
+        android:background="#77c5fe"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回水厅"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_455px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:layout_marginTop="@dimen/h_82px"
+        android:background="#fb7384"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保本厅"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_455px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:layout_marginTop="@dimen/h_82px"
+        android:background="#e779fc"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高赔率厅"
+            />
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/beijing28_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="北京28"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhengwenwenzi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+           >
+
+            <ImageView
+                android:id="@+id/BJ_chujifang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/huishui"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/chuji_peilvshuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peilv_image_selector"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:drawablePadding="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="50dp"
+                android:drawableLeft="@drawable/vip_icon"
+                android:id="@+id/BJ_chuji_person_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="260人"
+                android:layout_alignParentRight="true"
+               />
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/one_downradius" >
+
+                <TextView
+                    android:id="@+id/chujifang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/dibu_bg"
+                    android:textStyle="bold|italic"
+                    android:text="保本厅"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/fir_huishui_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold|italic"
+                    android:text="（最高回水18%）"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/chujifang"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_renshu"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="10dp"
+           >
+
+            <ImageView
+                android:id="@+id/BJ_zhongjifang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baoben"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/zhongji_peilvshuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peilv_image_selector"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:drawablePadding="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="50dp"
+                android:drawableLeft="@drawable/vip_icon"
+                android:id="@+id/BJ_zhongji_person_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="260人"
+                android:layout_alignParentRight="true"
+               />
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/two_downradius"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/zhongjifang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/dibu_bg"
+                    android:textStyle="bold|italic"
+                    android:text="回水厅"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/sec_huishui_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold|italic"
+                    android:text="（最高回水18%）"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/zhongjifang"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_renshu"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/gaoji_peilvshuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peilv_image_selector"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/BJ_gaojifang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gaopei"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:drawablePadding="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="50dp"
+                android:drawableLeft="@drawable/vip_icon"
+                android:id="@+id/BJ_gaojiji_person_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="260人"
+                android:layout_alignParentRight="true"
+               />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:paddingRight="10dp"
+                android:background="@drawable/three_downradius" >
+
+
+                <TextView
+                    android:id="@+id/gaojifang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/dibu_bg"
+                    android:textStyle="bold|italic"
+                    android:text="高赔率厅"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/thr_huishui_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold|italic"
+                    android:text="（最高回水18%）"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/gaojifang"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_renshu"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

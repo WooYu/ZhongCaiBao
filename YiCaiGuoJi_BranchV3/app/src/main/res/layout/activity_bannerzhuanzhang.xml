@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_417px"
+        android:layout_marginTop="@dimen/h_28px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/w_44px"
+        android:paddingRight="@dimen/w_44px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_137px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/w_300px"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="银行卡"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_38px" />
+
+            <TextView
+                android:id="@+id/tv_banner_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_56px"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_36px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_3px"
+            android:background="@color/color_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_137px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/w_300px"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="持卡人"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_38px" />
+
+            <TextView
+                android:id="@+id/tv_banner_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_56px"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_36px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_3px"
+            android:background="@color/color_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_137px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="@dimen/w_300px"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="银行名称"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_38px" />
+
+            <TextView
+                android:id="@+id/tv_banner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_56px"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/w_36px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_banner_outload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_123px"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:layout_marginTop="@dimen/h_70px"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:text="提交回执单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/h_80px"
+        android:text="温馨提示"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/w_40px"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:layout_marginTop="@dimen/h_30px"
+        android:text="（您可以使用银行卡或支付宝向上面显示的银行卡转账充值，转账后请您提交回执单，本站将根据您提供的信息与银行核对，确认收到款项后将及时为您账户入账，一般支付宝及部分银行卡支付到账时间为3-5分钟，若10分钟还未到账请和客服联系为您查询）"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/w_40px" />
+
+
+</LinearLayout>

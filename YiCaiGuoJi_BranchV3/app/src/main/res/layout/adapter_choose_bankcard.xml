@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_198px"
+        >
+        <ImageView
+            android:id="@+id/iv_bank_img"
+            android:layout_width="@dimen/w_120px"
+            android:layout_height="@dimen/h_115px"
+            android:src="@drawable/loading_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_58px"
+            />
+
+        <TextView
+            android:id="@+id/tv_bank_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_bank_img"
+            android:layout_marginTop="@dimen/h_45px"
+            android:layout_marginLeft="@dimen/w_50px"
+            android:text="中国工商银行"
+            android:textSize="@dimen/h_40px"
+            android:textColor="@color/color_333333"
+            />
+        <TextView
+            android:id="@+id/tv_bank_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_bank_img"
+            android:layout_below="@id/tv_bank_title"
+            android:layout_marginTop="@dimen/h_20px"
+            android:layout_marginLeft="@dimen/w_50px"
+            android:text="ICBC"
+            android:textSize="@dimen/h_26px"
+            android:textColor="@color/color_999999"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

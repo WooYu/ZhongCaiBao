@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+<LinearLayout
+    android:layout_width="@dimen/w_900px"
+    android:layout_height="@dimen/h_1300px"
+    android:background="@drawable/money_bg_white"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_90px"
+        android:gravity="center"
+        android:text="第三方充值正常使用"
+        android:textColor="@color/black"
+        android:textSize="@dimen/w_40px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_4px"
+        android:background="@color/color_999999" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_30px" />
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_home_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_100px"
+        android:background="@color/color_eb5a4d"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_40px" />
+</LinearLayout>
+</LinearLayout>

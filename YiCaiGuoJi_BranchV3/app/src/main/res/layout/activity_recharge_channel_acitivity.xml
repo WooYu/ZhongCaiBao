@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.RechargeChannelAcitivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_144px"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/w_30px"
+            android:paddingRight="@dimen/w_30px"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/recharge_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typesize_b" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gapsize_d"
+        android:layout_marginTop="@dimen/gapsize_d"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/button_submit"
+        android:layout_margin="@dimen/gapsize_b"
+        android:text="提交" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.SelectBankCardActivity">
+
+    <ListView
+        android:id="@+id/lv_bankcard_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:layout_marginLeft="@dimen/w_43px"
+        android:layout_marginRight="@dimen/w_43px"
+        android:layout_marginTop="@dimen/h_30px"></ListView>
+    <LinearLayout
+        android:id="@+id/ll_add_bank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_123px"
+        android:layout_marginLeft="@dimen/w_43px"
+        android:layout_marginRight="@dimen/w_43px"
+        android:layout_marginTop="@dimen/h_112px"
+        android:background="@drawable/line_dot"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/color_e8554e"
+            android:textSize="@dimen/h_44px"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_16px"
+            android:text="添加银行卡"
+            android:textColor="@color/color_e8554e"
+            android:textSize="@dimen/h_44px"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_144px"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/w_30px"
+            android:paddingRight="@dimen/w_30px"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/selectnote_arrow_down"
+            android:text="@string/title_selectnote"
+            android:textColor="@color/white"
+            android:textSize="@dimen/typesize_b" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:src="@drawable/bet_menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/gapsize_d"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--倒计时-->
+    <LinearLayout
+        android:id="@+id/ll_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_123px"
+        android:layout_below="@id/rl_title"
+        android:layout_marginLeft="@dimen/w_44px"
+        android:layout_marginRight="@dimen/w_44px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_lotterystatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/h_36px"
+            tools:text="@string/selectnote_countdown_period" />
+
+        <com.developer.lecai.view.CountdownView
+            android:id="@+id/cdv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_100px"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixDay="@string/selectnote_countdown_day"
+            app:suffixGravity="center"
+            app:suffixHour="@string/selectnote_countdown_hour"
+            app:suffixMinute="@string/selectnote_countdown_min"
+            app:suffixSecond="@string/selectnote_countdown_sec"
+            app:suffixTextSize="@dimen/h_36px"
+            app:timeTextColor="@color/red"
+            app:timeTextSize="@dimen/h_36px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2px"
+        android:layout_below="@id/ll_countdown"
+        android:background="#e5e5e5" />
+
+    <!--近期开奖-->
+    <LinearLayout
+        android:id="@+id/ll_lotteryrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line_one"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_recentlylottery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gapsize_d"
+            android:layout_marginRight="@dimen/gapsize_d">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_26px"
+                android:drawablePadding="@dimen/gapsize_e"
+                android:drawableStart="@drawable/shake_icon"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/gapsize_d"
+                android:paddingTop="@dimen/gapsize_d"
+                android:text="摇一摇"
+                android:textColor="#666666"
+                android:textSize="@dimen/h_36px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/w_28px"
+                android:drawableEnd="@drawable/blow_icon"
+                android:drawablePadding="@dimen/gapsize_f"
+                android:paddingBottom="@dimen/gapsize_d"
+                android:paddingTop="@dimen/gapsize_d"
+                android:text="近期开奖"
+                android:textColor="#666666"
+                android:textSize="@dimen/h_36px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_2px"
+            android:background="#e5e5e5" />
+
+        <ListView
+            android:id="@+id/lv_recentlylottery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_500px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--选号列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/ll_lotteryrecord">
+
+        <TextView
+            android:id="@+id/tv_gamerule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gapsize_d"
+            android:layout_marginLeft="@dimen/w_44px"
+            android:layout_marginRight="@dimen/w_44px"
+            android:layout_marginTop="@dimen/h_62px"
+            android:textColor="#999999"
+            android:textSize="@dimen/h_36px"
+            tools:text="选注规则" />
+
+        <TextView
+            android:id="@+id/tv_selectnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gamerule"
+            android:background="@drawable/marksix_label_a"
+            android:gravity="center"
+            android:text="@string/marksix_selectnum"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d" />
+
+        <TextView
+            android:id="@+id/tv_losspercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_selectnum"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/marksix_label_b"
+            android:gravity="center"
+            android:text="@string/marksix_losspercent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_numericalselection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_gamerule"
+            android:layout_toRightOf="@id/tv_selectnum" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <!---注-元-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_2px"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:id="@+id/tv_notes_rmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/gapsize_d"
+            android:text="@string/selectnote_notes_rmb_default"
+            android:textColor="@color/black"
+            android:textSize="@dimen/typesize_d" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_2px"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_165px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--加入投彩区-->
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_joinlotteryarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/gapsize_g"
+                    android:drawableTop="@drawable/selectnote_add"
+                    android:gravity="center"
+                    android:text="@string/selectnote_joinlotteryarea"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/h_26px" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeView
+                    android:id="@+id/bgabadgeview"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="5dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <!--机选-->
+                <Button
+                    android:id="@+id/btn_machine_choose"
+                    android:layout_width="@dimen/w_312px"
+                    android:layout_height="@dimen/h_109px"
+                    android:layout_marginRight="@dimen/w_58px"
+                    android:background="@drawable/selector_round_choose_bg"
+                    android:text="机选"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h_38px" />
+
+                <Button
+                    android:id="@+id/btn_next_step"
+                    android:layout_width="@dimen/w_312px"
+                    android:layout_height="@dimen/h_109px"
+                    android:background="@drawable/selector_round_next_step_bg"
+                    android:text="下一步"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/h_38px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

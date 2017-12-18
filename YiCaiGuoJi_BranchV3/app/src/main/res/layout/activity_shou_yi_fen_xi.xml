@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/h_54px"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/w_41px"
+        android:layout_marginLeft="@dimen/h_41px"
+        android:background="@drawable/shape_orange_round_bg"
+        android:layout_height="@dimen/h_100px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4.2"
+            android:text="结算时间段"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/h_39px"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/h_6px"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.3"
+            android:text="会员数"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/h_39px"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/h_6px"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.0"
+            android:text="佣金"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/h_39px"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/h_6px"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.9"
+            android:text="盈亏额"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/h_39px"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.developer.lecai.view.PullToRefreshView
+        android:id="@+id/lv_shouyi_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/h_30px"
+        android:layout_marginRight="@dimen/h_30px">
+
+        <ListView
+            android:id="@+id/lv_shouyifenxi_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.developer.lecai.view.PullToRefreshView>
+</LinearLayout>

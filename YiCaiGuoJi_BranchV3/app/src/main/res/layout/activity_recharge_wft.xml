@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.developer.lecai.activity.RechargeWFTActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_196px"
+        android:layout_marginTop="@dimen/h_28px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/w_30px"
+        android:paddingRight="@dimen/w_30px">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/w_123px"
+            android:layout_height="@dimen/w_123px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_36px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/recharge_wx" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_44px"
+            android:layout_toRightOf="@id/iv_img"
+            android:text="微信支付"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/h_38px" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/h_26px"
+            android:layout_toRightOf="@id/iv_img"
+            android:maxLines="1"
+            android:text="保存二维码 打开微信通过扫一扫支付"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/h_30px" />
+
+        <CheckBox
+            android:id="@+id/cb_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_30px"
+            android:background="@null"
+            android:button="@drawable/selector_circle"
+            android:checked="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:background="@color/color_e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_196px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/w_30px"
+        android:paddingRight="@dimen/w_30px">
+
+        <ImageView
+            android:id="@+id/iv_img_1"
+            android:layout_width="@dimen/w_123px"
+            android:layout_height="@dimen/w_123px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_36px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/recharge_alipay" />
+
+        <TextView
+            android:id="@+id/tv_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_44px"
+            android:layout_toRightOf="@id/iv_img_1"
+            android:text="支付宝支付"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/h_38px" />
+
+        <TextView
+            android:id="@+id/tv_desc_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_1"
+            android:layout_marginTop="@dimen/h_26px"
+            android:layout_toRightOf="@id/iv_img_1"
+            android:maxLines="1"
+            android:text="保存二维码 打开支付宝通过扫一扫支付"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/h_30px" />
+
+        <CheckBox
+            android:id="@+id/cb_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_30px"
+            android:background="@null"
+            android:button="@drawable/selector_circle"
+            android:checked="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_2px"
+        android:layout_marginLeft="@dimen/w_30px"
+        android:layout_marginRight="@dimen/w_30px"
+        android:background="@color/color_e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_qq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_196px"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/w_30px"
+        android:paddingRight="@dimen/w_30px">
+
+        <ImageView
+            android:id="@+id/iv_img_qq"
+            android:layout_width="@dimen/w_123px"
+            android:layout_height="@dimen/w_123px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_36px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/recharge_qq" />
+
+        <TextView
+            android:id="@+id/tv_title_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h_44px"
+            android:layout_toEndOf="@id/iv_img_qq"
+            android:text="QQ支付"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/h_38px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_qq"
+            android:layout_marginTop="@dimen/h_26px"
+            android:layout_toEndOf="@id/iv_img_qq"
+            android:maxLines="1"
+            android:text="保存二维码 打开QQ通过扫一扫支付"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/h_30px" />
+
+        <CheckBox
+            android:id="@+id/cb_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/w_30px"
+            android:background="@null"
+            android:button="@drawable/selector_circle"
+            android:checked="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/button_submit"
+        android:layout_marginTop="@dimen/w_70px"
+        android:text="提交" />
+</LinearLayout>

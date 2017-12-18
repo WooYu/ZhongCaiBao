@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">中彩宝</string>
+    <string name="mergeDetail_jingXing">全部</string>
+    <string name="mergeDetail_jingDu">进度</string>
+    <string name="mergeDetail_fangAn">方案金额</string>
+    <string name="mergeDetail_manYuan">已满员</string>
+
+    <string name="title_showbonus">开奖</string>
+    <string name="return_page">返回</string>
+
+    <string name="notice_message">消息</string>
+    <string name="notice_notice">公告</string>
+
+    <!--选注-->
+    <string name="title_selectnote">选注</string>
+    <string name="selectnote_countdown_period">距离%s期截止还有</string>
+    <string name="selectnote_countdown_day">天</string>
+    <string name="selectnote_countdown_hour">小时</string>
+    <string name="selectnote_countdown_min">分钟</string>
+    <string name="selectnote_countdown_sec">秒</string>
+    <string name="selectnote_deciding">封盘中</string>
+    <string name="selectnote_notes_rmb" formatted="false">%1$d注%2$d元</string>
+    <string name="selectnote_notes_rmb_default">-注-元</string>
+    <string name="selectnote_joinlotteryarea">加入投彩区</string>
+    <string name="selectnote_bonus">（奖金是：%s）</string>
+    <string name="selectnote_clearlotterydialog_title">提示</string>
+    <string name="selectnote_clearlotterydialog_content">本期已结束，是否需要清空投注内容？要清空内容请点击确定！不刷新请点击取消</string>
+    <string name="selectnote_singlenotelimit">单注金额不能小于0</string>
+    <string name="selectnote_singlenotelimit_wanrning">单注金额必须为2的倍数</string>
+    <string name="selectnote_countabnormal">请合法购球，否则无法购买</string>
+    <string name="selectnote_noteexists">该注号码已存在</string>
+    <string name="selectnote_editsuccess">编辑选号成功</string>
+    <string name="selectnote_rebate">%.2f%%</string>
+    <string name="selectnote_totalamount">%.2f</string>
+
+    <!--投注-->
+    <string name="title_bet">投注</string>
+    <string name="bet_achipped">发起合买</string>
+    <string name="bet_deciding">封盘中</string>
+    <string name="bet_waiting">请稍等...</string>
+    <string name="bet_countdown">距离%s期截止还有</string>
+    <string name="bet_pickingnumber">手选号码</string>
+    <string name="bet_randomnumber">随机一注</string>
+    <string name="bet_emptylist">清空列表</string>
+    <string name="bet_summation">合计:¥%.2f元</string>
+    <string name="bet_notes_nper_multiple" formatted="false">%1$d注%2$d期%3$d倍</string>
+    <string name="bet_plan_multiple">计划倍投</string>
+    <string name="bet_selected_multiple">已选倍投</string>
+    <string name="bet_start">投注</string>
+    <string name="bet_notes_money" formatted="false">%1$s注%2$s元</string>
+    <string name="bet_insufficientfunds">用户余额不足，请充值</string>
+    <string name="bet_customerservice">在线客服</string>
+    <string name="bet_record">投注记录</string>
+
+    <!--发起合买-->
+    <string name="chipped_amount">方案金额：¥%.2f元</string>
+    <string name="chipped_copies">合买总份数</string>
+    <string name="chipped_offertobuy">我要认购</string>
+    <string name="chipped_guaranteednum">保底份数</string>
+    <string name="chipped_guaranteedtip">可以不保底</string>
+    <string name="chipped_securitysetting">保底设置</string>
+    <string name="chipped_securityset_whole">完全</string>
+    <string name="chipped_securityset_cutoff">截止</string>
+    <string name="chipped_securityset_tailafter">跟踪</string>
+    <string name="chipped_securityset_secrecy">保密</string>
+    <string name="chipped_sumpayable">应付金额%.2f元</string>
+    <string name="chipped_submit">提交</string>
+    <string name="chipped_eachlimit">每份金额不能小于0.01元</string>
+    <string name="chipped_eachlimit_error">数据不合法，请重新输入</string>
+    <string name="chipped_nooffercopies">认购份数为0</string>
+
+    <!--追号-->
+    <string name="title_afterno">追号</string>
+    <string name="afterno_periods">期数</string>
+    <string name="afterno_money">金额</string>
+    <string name="afterno_multiple">倍数</string>
+    <string name="afterno_item_money">%.2f元</string>
+    <string name="afterno_item_multiple">倍</string>
+    <string name="afterno_statistics_default">共-期,共-元</string>
+    <string name="afterno_statistics" formatted="false">共%d期,共%.2f元</string>
+    <string name="afterno_winning_cancellations">中奖撤单</string>
+    <string name="afterno_sumbit">提交</string>
+    <string name="afterno_selectnone">追选期数不能为空</string>
+
+    <!--六合彩-->
+    <string name="marksix_selectnum">选码</string>
+    <string name="marksix_losspercent">赔率</string>
+    <string name="marksix_kind">种类</string>
+    <string name="marksix_notes_rmb">%1$d注%2$.0f元</string>
+    <string name="marksix_unifiedamount">统一金额</string>
+    <string name="marksix_amountlimit">每注金额不能为0</string>
+
+    <!--投注记录-->
+    <string name="betrecord_amount">投注额</string>
+    <string name="betrecord_status_revoke">撤单</string>
+    <string name="betrecord_status_losing">未中奖</string>
+    <string name="betrecord_status_not">未开奖</string>
+    <string name="betrecord_status_subscription">认购中</string>
+    <string name="betrecord_status_already">已中奖</string>
+
+
+    <!--投注详情-->
+    <string name="bettingdetail_title">投注记录详情</string>
+    <string name="bettingdetail_info">方案信息</string>
+    <string name="bettingdetail_particulars">方案明细</string>
+    <string name="bettingdetail_iletou">开奖结果</string>
+    <string name="bettingdetail_serial">方案编号</string>
+    <string name="bettingdetail_totalsum">方案总额</string>
+    <string name="bettingdetail_periods">方案期数</string>
+    <string name="bettingdetail_endtime">结束时间</string>
+    <string name="bettingdetail_content">方案内容</string>
+    <string name="bettingdetail_gametype">[%s]</string>
+    <string name="bettingdetail_amount">投注：%s元</string>
+    <string name="bettingdetail_bonus">奖金%s元</string>
+
+    <!--充值-->
+    <string name="recharge_title">充值</string>
+    <string name="recharge_way_qq">QQ充值</string>
+    <string name="recharge_way_wx">微信充值</string>
+    <string name="recharge_way_alipay">支付宝充值</string>
+    <string name="recharge_laststep">上一步</string>
+    <string name="recharge_now">立即充值</string>
+    <string name="recharge_prepaid">我已充值</string>
+    <string name="recharge_steptips">扫码步骤：</string>
+    <string name="recharge_step1">1.点击“立即充值”，将为您截屏并保存到相册</string>
+    <string name="recharge_step2">2.请在QQ、支付宝或者微信中打开“扫一扫”</string>
+    <string name="recharge_step3">3.请在扫一扫中点击右上角，选择“从相册中选取二维码”选取截屏的图片</string>
+    <string name="recharge_step4">4.如果充值未及时到账，请联系在线客服</string>
+
+    <!--特殊符号-->
+    <string name="symbol_91">&#91;</string>
+    <string name="symbol_93">&#93;</string>
+    <string name="symbol_44">&#44;</string>
+    <string name="symbol_124">&#124;</string>
+    <string name="symbol_58">&#058;</string>
+    <string name="symbol_59">&#059;</string>
+
+    <!--输入类型-->
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyz</string>
+</resources>

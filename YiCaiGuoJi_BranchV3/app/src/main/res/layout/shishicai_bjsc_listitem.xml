@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shishicai_item_title"
+            android:layout_width="@dimen/w_40px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_44px"
+            android:layout_marginRight="@dimen/h_32px"
+            android:layout_marginTop="@dimen/h_50px"
+            android:maxLines="3"
+            android:text="万位"
+            android:textColor="@color/cl_orange"
+            android:textSize="@dimen/h_34px" />
+
+        <LinearLayout
+            android:id="@+id/ll_ssc_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_100px"
+            android:layout_marginLeft="@dimen/w_150px"
+            android:layout_marginTop="@dimen/h_30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_81px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/w_44px"
+                android:background="@drawable/selector_round_number_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ffc_quan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="全"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+                <TextView
+                    android:id="@+id/tv_ffc_da"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="大"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+                <TextView
+                    android:id="@+id/tv_ffc_xiao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="小"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+                <TextView
+                    android:id="@+id/tv_ffc_dan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="单"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+                <TextView
+                    android:id="@+id/tv_ffc_shuang"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="双"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+                <TextView
+                    android:id="@+id/tv_ffc_qing"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="清"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/h_36px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ssc_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_180px"
+            android:layout_below="@id/ll_ssc_ll1"
+            android:layout_marginLeft="@dimen/w_150px"
+            android:layout_marginRight="@dimen/w_44px"
+            android:layout_marginTop="@dimen/h_20px">
+
+            <LinearLayout
+                android:id="@+id/ly_zero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/shishicai_item_zero"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_zero1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="13"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_first"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shishicai_item_first1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="17"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_two"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_two1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="8"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_third"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_third1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="7"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_four"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_four1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="9"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_five"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_five1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="11"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_six"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_six1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="30"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_180px"
+            android:layout_below="@+id/ll_ssc_ll2"
+            android:layout_marginLeft="@dimen/w_150px"
+            android:layout_marginRight="@dimen/w_44px"
+            android:layout_marginTop="@dimen/w_20px">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/shishicai_item_seven"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_seven1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="15"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/shishicai_item_eight"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_eight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="3"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_nine"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_nine1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="4"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shishicai_item_ten"
+                    android:layout_width="@dimen/w_100px"
+                    android:layout_height="@dimen/w_100px"
+                    android:background="@drawable/shishicaibg_selector"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/color_e8554e"
+                    android:textSize="@dimen/w_40px" />
+
+                <TextView
+                    android:id="@+id/shishicai_item_ten1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/w_10px"
+                    android:text="13"
+                    android:textColor="@color/cl_gray"
+                    android:textSize="@dimen/w_40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

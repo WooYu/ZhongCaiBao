@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_100px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_vip_lebal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="级别"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="@dimen/w_2px"
+            android:layout_height="match_parent"
+            android:background="@color/color_333333" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_vip_min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="~"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_vip_max"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="500"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/w_2px"
+            android:layout_height="match_parent"
+            android:background="@color/color_333333" />
+
+        <TextView
+            android:id="@+id/tv_vip_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="佣金"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/w_490px"
+        android:layout_height="@dimen/w_146px"
+        >
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/w_146px"
+            android:layout_height="@dimen/w_146px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/w_30px"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_item_1" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_img"
+            android:layout_marginTop="@dimen/h_10px"
+            android:text="北京幸运28"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/h_42px" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_img"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/h_20px"
+            android:text="每天179期，五分钟.."
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/h_40px"
+            android:maxLines="1"
+            />
+    </RelativeLayout>
+</LinearLayout>
