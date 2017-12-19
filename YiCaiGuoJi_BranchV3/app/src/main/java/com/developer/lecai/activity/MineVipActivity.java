@@ -194,10 +194,9 @@ public class MineVipActivity extends BaseActivity {
     }
 
     private void requestShare() {
-        String host = "http://qr.liantu.com/api.php?w=200&text=";
         String text = DOMAINName + "/Home/AppRegister/";
         String shareCode = UserController.getInstance().getLoginBean().getSharecode();
-        shareUrl = host + text + shareCode;
+        shareUrl = text + shareCode;
         tv_vip_lianjie.setText(text);
         shareUrl = text + shareCode;
         tv_vip_lianjie.setText(shareUrl);

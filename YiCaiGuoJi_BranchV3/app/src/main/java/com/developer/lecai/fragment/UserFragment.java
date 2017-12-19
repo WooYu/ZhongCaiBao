@@ -30,6 +30,7 @@ import com.developer.lecai.activity.TiXianActivity;
 import com.developer.lecai.bean.LoginBean;
 import com.developer.lecai.control.MsgController;
 import com.developer.lecai.control.UserController;
+import com.developer.lecai.http.H;
 import com.developer.lecai.http.HttpCallback;
 import com.developer.lecai.utils.JsonUtil;
 import com.developer.lecai.utils.MyUtil;
@@ -69,6 +70,7 @@ public class UserFragment extends BaseFragment {
     private HttpCallback httpCallback;
     private LinearLayout ll_user_dailikaihu;
     private LinearLayout ll_user_dailihoutai;
+    private View lineVip;
 
 
     @Override
@@ -104,6 +106,9 @@ public class UserFragment extends BaseFragment {
         ll_user_shouyi = (LinearLayout) view.findViewById(R.id.ll_user_shouyi);
         ll_user_dailikaihu = (LinearLayout) view.findViewById(R.id.ll_user_dailikaihu);
         ll_user_dailihoutai = (LinearLayout) view.findViewById(R.id.ll_user_dailihoutai);
+
+        lineVip = view.findViewById(R.id.line_vip);
+
     }
 
 
@@ -151,12 +156,19 @@ public class UserFragment extends BaseFragment {
             }
 
             if (loginBean.getType() == 1) {
+                //是代理
+                ll_user_vip.setVisibility(View.GONE);
+                lineVip.setVisibility(View.GONE);
                 ll_user_dailikaihu.setVisibility(View.VISIBLE);
                 ll_user_dailihoutai.setVisibility(View.VISIBLE);
             } else {
+                //是会员
+                ll_user_vip.setVisibility(View.VISIBLE);
+                lineVip.setVisibility(View.VISIBLE);
                 ll_user_dailikaihu.setVisibility(View.GONE);
                 ll_user_dailihoutai.setVisibility(View.GONE);
             }
+
         } else {
             user_header_name.setText("登录/注册");
             ll_user_dailikaihu.setVisibility(View.GONE);
@@ -252,7 +264,7 @@ public class UserFragment extends BaseFragment {
                 break;
             case R.id.ll_user_wx:
                 //微信分享
-                String url = "http://www.lsls188.com";
+                String url = H.DOMAINName.replace("qt","www");
                 String title = getString(R.string.app_name);
                 String desc = "投资2元钱，赚来500万";
                 WxShareAndLoginUtils.WxUrlShare(url, title, desc, 0);

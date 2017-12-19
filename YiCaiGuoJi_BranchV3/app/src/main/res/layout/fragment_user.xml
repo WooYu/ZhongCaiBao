@@ -522,6 +522,7 @@
             </LinearLayout>
 
             <View
+                android:id="@+id/line_vip"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_2px"
                 android:layout_marginLeft="@dimen/w_58px"
@@ -532,7 +533,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_137px"
                 android:background="@color/white"
-                android:visibility="gone"
                 android:gravity="center_vertical">
 
                 <ImageView
@@ -565,7 +565,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_2px"
-                android:visibility="gone"
                 android:layout_marginLeft="@dimen/w_58px"
                 android:background="@color/color_e5e5e5" />
 
